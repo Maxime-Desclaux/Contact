@@ -1,0 +1,220 @@
+/* Styles généraux */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Titres */
+h1, h2 {
+    color: #4a90e2;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Navigation */
+nav {
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #4a90e2;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #357ab8;
+    text-decoration: underline;
+}
+
+/* Formulaires */
+form {
+    text-align: left;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form button {
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form input:focus {
+    border-color: #4a90e2;
+    outline: none;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+form button {
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #357ab8;
+}
+
+/* Liens retour */
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #666;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    color: #333;
+}
+
+/* Messages */
+.message {
+    margin: 15px 0;
+    padding: 15px;
+    background: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.message strong {
+    color: #4a90e2;
+    font-size: 1.1em;
+}
+
+.message em {
+    display: block;
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Bouton "Retour" */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #357ab8;
+}
+
+/* Boutons dans les formulaires */
+form button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Page de connexion : Déplacer le lien "Mot de passe oublié" sous le bouton "Créer un compte" */
+.login-form .back-link {
+    margin-top: 15px; /* Plus d'espace après le bouton */
+    display: block;
+    text-align: center;
+}
+
+.login-form .back-link:hover {
+    color: #357ab8;
+}
+
+/* Responsivité */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    nav a {
+        font-size: 1em;
+        margin: 0 8px;
+    }
+
+    form input, form button {
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    nav a {
+        font-size: 0.9em;
+        margin: 0 5px;
+    }
+
+    form input, form button {
+        padding: 8px;
+    }
+
+    footer {
+        font-size: 0.75em;
+    }
+}
